@@ -27,7 +27,7 @@ package com.zyk.week2;
 public class LeetCode26 {
 
 
-    public static int removeDuplicates(int[] nums) {
+    public int removeDuplicates(int[] nums) {
         if(nums == null || nums.length == 0){
             return 0;
         }
@@ -42,5 +42,6 @@ public class LeetCode26 {
         }
         return a + 1;
     }
+
 
 }
