@@ -8,16 +8,35 @@ package com.zyk.week2;
  */
 public class LeetCode35 {
 
+    //时间复杂度不符合题意
+//    public int searchInsert(int[] nums, int target) {
+//        int a = 0;
+//        if(nums[nums.length - 1] < target){
+//            a = nums.length;
+//        }
+//        for(int i =0;i < nums.length;i++){
+//            if(nums[i] < target){
+//                a = i + 1;
+//            }
+//        }
+//        return a;
+//    }
+
+
     public int searchInsert(int[] nums, int target) {
-        int a = 0;
-        if(nums[nums.length - 1] < target){
-            a = nums.length;
-        }
-        for(int i =0;i < nums.length;i++){
-            if(nums[i] < target){
-                a = i + 1;
+        int n = nums.length;
+        int left = 0;
+        int right = n - 1;
+        while(left <= right){
+            int mid = ((right - left) >>1) + left;
+            if(target <= nums[mid]){
+                n = mid;
+                right = mid - 1;
+            }else{
+                left = mid + 1;
             }
         }
-        return a;
+        return n;
     }
+
 }
