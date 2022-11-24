@@ -1,4 +1,4 @@
-package week4;
+package com.zyk.week4;
 
 import java.util.ArrayList;
 import java.util.List;
