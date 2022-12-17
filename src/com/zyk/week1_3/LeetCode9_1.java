@@ -7,7 +7,7 @@ package com.zyk.week1_3;
  *
  * 例如，121 是回文，而 123 不是。
  */
-public class LeetCode9 {
+public class LeetCode9_1 {
 
     public static void main(String[] args) {
         int a = 122353221;
