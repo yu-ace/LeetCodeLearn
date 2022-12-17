@@ -25,7 +25,14 @@ public class LeetCode1 {
 //        return a;
 //    }
 
-    public int[] twoSum(int[] nums, int target) {
+    public static void main(String[] args) {
+        int[] a = {12,2,7,5};
+        int tar = 7;
+        int[] b = twoSum(a, tar);
+        System.out.println(b);
+    }
+
+    public static int[] twoSum(int[] nums, int target) {
         Map<Integer,Integer> a = new IdentityHashMap<>();
         for(int i = 0;i < nums.length;i++){
             if(a.containsKey(target - nums[i])){
